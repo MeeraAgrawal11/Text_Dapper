@@ -1,1 +1,1 @@
-web: gunicorn heroku:app
+web: python manage.py migrate && gunicorn locallibrary.wsgi
